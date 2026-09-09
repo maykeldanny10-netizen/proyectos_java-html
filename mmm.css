@@ -12,6 +12,7 @@ body {
     text-align: center;
     margin: 100px 100px 0 100px;
     animation: aparecer 0.8s ease-in;
+    box-shadow: 0 8px 20px rgba(0, 0 0, 0.3);
 }
 .box_red {
     background: rgba(255, 255,255, 0.2);
