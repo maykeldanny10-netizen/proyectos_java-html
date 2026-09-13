@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pinyon+Script&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sabrina-Perfumes</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Perfumes-Sabrina</h1>
+        <p>huele la frangancia</p>
+    </div>
+    <div>
+        <img src="img/images (2).jpeg" alt="sabri"  class="sabri">
+    </div>
+    <img src="img/kindpng_239314.png" alt="perfume" class="perfume">
+    <img src="img/pngfind.com-sabrina-carpenter-png-2043066.png" alt="firma" class="firma">
+    <div class="FAV">
+        <h2>Los mas favoritos:</h2>
+    </div>
+    <div class="perfumes-card">
+        <div class="producto">
+            <img src="img/perfume1.jpeg" alt="Bloom Velvet">
+            <h3>Bloom Velvet</h3>
+            <p>floral</p>
+            <p class="precio">$42</p>
+        </div>
+
+        <div class="producto">
+            <img src="img/perfume2.png" alt="Forest Aura">
+            <h3>Forest Aura</h3>
+            <p>Natural</p>
+            <p class="precio">$56</p>
+        </div>
+
+        <div class="producto">
+            <img src="img/perfume3.jpeg" alt="Moonlight Silk">
+            <h3>Moonlight Silk</h3>
+            <p>Suave</p>
+            <p class="precio">$78</p>
+        </div>
+    </div>
+
+    <div class="mejores">
+        <h2>Sus mejores canciones:</h2>
+    </div>
+    <div class="canciones">
+        <div class="cancion">
+            <img src="img/tears.jpg" class="sab"> 
+            <h3>Tears</h3>
+            <p>su cancion "tears" actualmente es popular en las redes sociales</p>
+            <audio id="tears"  src="audios/Sabrina Carpenter - Tears (Sub. Español  Lyrics) (2).mp3"></audio>
+            <button class="boton-musica">Reproducir</button>
+        </div>
+
+        <div class="cancion">
+            <img src="img/manchild.jpeg " class="sab">
+            <h3>Manchild</h3>
+            <p>Manchild expresa un odio a los hombres</p>
+            <audio id="manchild" src="audios/Sabrina Carpenter - Manchild (Official Video).mp3"></audio>
+            <button class="boton-musica" id="boton-musica">Reproducir</button>
+        </div>
+
+        <div class="cancion">
+            <img src="img/espresso.jpeg" class="sab">
+            <h3>Espresso</h3>
+            <p>Espresso ha influido en la carrera de esta cantante</p>
+            <audio id="espresso" src="audios/Sabrina Carpenter - Espresso.mp3"></audio>
+            <button class="boton-musica">Reproducir</button>
+        </div>
+    </div>
+    <script>
+        const cancion = document.getElementById("manchild");
+        const boton = document.getElementById("boton-musica");
+
+        boton.addEventListener("click", () => {
+            cancion.paused ? cancion.play() : cancion.pause();
+            });
+    </script>
+</body>
+</html>

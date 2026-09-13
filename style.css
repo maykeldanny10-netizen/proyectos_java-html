@@ -1,0 +1,199 @@
+.title {
+    
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 100px;
+}
+body {
+    background-image: url(img/sabrina-carpenter-fashion.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-bottom: 500px;
+
+}
+.perfumes-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.producto img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    object-fit: cover;
+}
+.producto {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: transform 0.3s;
+}
+.producto h3 {
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 20px;
+    text-align: center;
+    text-size-adjust: 100px;
+    margin-top: -29px;
+}
+.producto  p {
+    text-align: center;
+    margin-top: -10px;
+}
+.precio {
+    background-color: rgb(202, 99, 206);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.FAV h2 {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Playwrite MX Guides", cursive;
+    font-size: 30px;
+    color: brown;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.producto:hover {
+    transform: scale(1.05);
+}
+.sabri {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.perfume {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: 800px;
+    z-index: 10;
+    right: -100px;
+}
+.firma {
+    position: absolute;
+    width: 200px;
+    left: 560px;
+    top: 2px;
+    height: auto;
+    z-index: 10;
+}
+.info-cancion {
+    background-color: aqua;
+    padding: 0;
+}
+.cancion {
+    width: 300px;
+    min-width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    top: 250px;
+}
+.canciones {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    top: 200px;
+}
+.cancion img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.cancion h3,
+.cancion p {
+    text-align: center;
+}
+.mejores {
+    position: relative;
+    text-align: center;
+    top: 150px;
+    font-family: "Playwrite MX Guides", cursive;
+}
+.mejores {
+    color: brown;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    font-size: 22px;
+}
+.boton-musica {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgb(158, 152, 158);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.boton-musica:hover {
+    color: rgb(255, 0, 221);
+}
+
+.boton-musica::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.boton-musica:hover::before {
+    width: 160%;
+}
+.sab {
+    border-radius: 10px;
+    border-color: black;
+}
+.cancion:hover {
+    transform: scale(1.05s);
+}
